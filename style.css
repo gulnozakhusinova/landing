@@ -1,20 +1,20 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: TT Hoves;
   color: #222222;
 
 }
 
-section{
+section {
   padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
-} 
+}
 
-section.hello{
+section.hello {
   padding: 40px;
   background-image: url('./img/html.png');
   background-repeat: no-repeat;
@@ -23,48 +23,49 @@ section.hello{
   padding-bottom: calc(14.4vw + 24px)
 }
 
-.logo{
+.logo {
   height: calc(30px + (41 - 30) * ((100vw - 375px) / (1280 - 375)));
 }
 
-.courseinfo{
+.courseinfo {
   display: flex;
-  gap:30px 160px;
+  gap: 30px 160px;
   flex-wrap: wrap;
   margin-top: calc(28px + (85 - 28) * ((100vw - 375px) / (1280 - 375)));
   margin-bottom: calc(48px + (76 - 48) * ((100vw - 375px) / (1280 - 375)));
 }
 
-.courseData{
+.courseData {
   font-size: 21px;
   line-height: 140%;
 }
 
-.courseData .value{
+.courseData .value {
   font-weight: 700;
 }
 
-h1{
+h1 {
   font-family: 'Chava';
-font-size: calc(42px + (80 - 42) * ((100vw - 375px) / (1280 - 375)));
-line-height: 110%;
+  font-size: calc(42px + (80 - 42) * ((100vw - 375px) / (1280 - 375)));
+  line-height: 110%;
 }
 
-p{
-  margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));;
-font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
-font-weight: 300;
-line-height: 140%;
+p {
+  margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+  ;
+  font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 300;
+  line-height: 140%;
 }
 
-.cta{
+.cta {
   margin-top: 20px;
   display: flex;
-  gap:20px 30px;
+  gap: 20px 30px;
   flex-wrap: wrap;
 }
 
-button{
+button {
   width: 328px;
   padding: 20px 0;
   border-radius: 12px;
@@ -75,93 +76,144 @@ button{
   cursor: pointer;
 }
 
-button.purpel{
+button.purpel {
   background: #6E3ABA;
-  color:white;
-  border:1px solid #6E3ABA;
+  color: white;
+  border: 1px solid #6E3ABA;
 
 }
 
-button.white{
-  background:white;
-  color:#6E3ABA;
-  border:1px solid #6E3ABA;
+button.white {
+  background: white;
+  color: #6E3ABA;
+  border: 1px solid #6E3ABA;
 }
 
-section.second{
-
+section.second {
+  padding-bottom: calc(6.6vw + 35px);
 }
 
 
-h2{
+h2 {
   font-size: calc(2.7vw + 24px);
   font-weight: 500;
   line-height: calc(3.1vw + 28px);
   padding-bottom: calc(8.1vw + 10px);
 }
 
-.courseBox img{
-width: calc(3.3vw + 167px);
+.courseBox img {
+  width: calc(3.3vw + 167px);
 }
 
-.courseBox{
+.courseContainer{
+  display: flex;
+  gap:70px;
+}
+
+.courseTypes {
   display: flex;
   flex-direction: column;
-  gap:calc(0.8vw + 5px)
+  gap: calc(5.2vw + 7px);
 }
 
-.courseTypes{
- display: grid;
- grid-template-columns: 1fr 1fr;
- gap:calc(5.2vw + 7px);
- max-width: 1200px;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
-
-.courseBox p{
+.courseBox p {
   font-weight: 600;
   font-size: calc(1vw + 14px);
   line-height: calc(1.3vw + 20px);
 }
 
-.courseBox span{
+.courseBox span {
   font-size: calc(1.3vw + 12px);
   line-height: calc(1.4vw + 19px);
 }
 
-section.saleContainer{
+section.saleContainer {
   margin-top: 50px;
   background: #6E3ABA;
   padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
 
 }
 
 
-.h3{
- color:white;
+.h3 {
+  color: white;
   font-weight: 700;
   font-size: calc(2vw + 26.5px);
   margin-bottom: calc(4.1vw + 4.7px);
 }
 
-.time{
+.time {
   display: flex;
-  gap:85px;
+  gap: 20px 85px;
   margin-bottom: calc(4vw + 6px);
   flex-wrap: wrap;
 }
 
-.date{
+.date {
   font-size: calc(12.6vw + 12.8px);
   font-family: 'Chava';
 }
 
 
-.timeCard span{
-font-size: calc(1.9vw + 3px);
-display: block;
-text-align: center;
+
+.infoSection{
+  margin-bottom: 160px;
+}
+
+
+.timeCard span {
+  font-size: calc(1.9vw + 3px);
+  display: block;
+  text-align: center;
+}
+
+h4 {
+  font-size: calc(2.7vw + 24px);
+  font-weight: 500;
+  line-height: calc(3.1vw + 28px);
+  padding-bottom: calc(7.7vw + 8px);
+  margin-top: calc(11vw + 19px);
+}
+
+.infoTitle {
+  font-weight: 600;
+  font-size: calc(1vw + 14px);
+  line-height: calc(1.3vw + 20px);
+}
+
+.infoText {
+  font-size: calc(1vw + 14px);
+  line-height: calc(1.3vw + 20px);
+}
+
+.infoContainer {
+  display: flex;
+  gap:100px;
+
+}
+
+
+
+
+@media(max-width:600px){
+.infoContainer{
+flex-wrap: wrap;
+gap:30px;
+}
+
+
+.courseContainer{
+  flex-direction: column;
+  gap:45px;
+}
+
+.infoSection{
+  margin-bottom: 40px;
+}
+
+
 }
