@@ -20,7 +20,7 @@ section.hello {
   background-repeat: no-repeat;
   background-position: top 120px right 30px;
   background-size: 35%;
-  padding-bottom: calc(14.4vw + 24px)
+  padding-bottom: calc(12vw + 24px)
 }
 
 .logo {
@@ -54,7 +54,7 @@ p {
   margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
   ;
   font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
-  font-weight: 300;
+  font-weight: 400;
   line-height: 140%;
 }
 
@@ -98,22 +98,22 @@ h2 {
   font-size: calc(2.7vw + 24px);
   font-weight: 500;
   line-height: calc(3.1vw + 28px);
-  padding-bottom: calc(8.1vw + 10px);
 }
 
 .courseBox img {
   width: calc(3.3vw + 167px);
 }
 
-.courseContainer{
+.courseContainer {
   display: flex;
-  gap:70px;
+  gap: 70px;
 }
 
 .courseTypes {
   display: flex;
   flex-direction: column;
   gap: calc(5.2vw + 7px);
+  margin-top: calc(8.1vw + 10px);
 }
 
 .courseBox p {
@@ -134,8 +134,7 @@ section.saleContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:30px;
-
+  gap: 30px;
 }
 
 
@@ -147,10 +146,10 @@ section.saleContainer {
 }
 
 .time {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px 85px;
   margin-bottom: calc(4vw + 6px);
-  flex-wrap: wrap;
 }
 
 .date {
@@ -160,7 +159,7 @@ section.saleContainer {
 
 
 
-.infoSection{
+.infoSection {
   margin-bottom: 160px;
 }
 
@@ -175,7 +174,7 @@ h4 {
   font-size: calc(2.7vw + 24px);
   font-weight: 500;
   line-height: calc(3.1vw + 28px);
-  padding-bottom: calc(7.7vw + 8px);
+  margin-bottom: calc(5vw + 8px);
   margin-top: calc(11vw + 19px);
 }
 
@@ -192,28 +191,184 @@ h4 {
 
 .infoContainer {
   display: flex;
-  gap:100px;
+  gap: 100px;
 
+}
+
+h4 {
+  font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.legendContainer {
+  margin-top: calc(11vw + 18px);
+}
+
+.infoContainer2 {
+  display: flex;
+  gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));
+  flex-wrap: wrap;
+}
+
+.infoCard2 {
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+.infoCard2 img {
+  width: 100%;
+}
+
+.infoBox2 {
+  flex-basis: 300px;
+  flex-grow: 3;
+}
+
+.skill img {
+  width: 36px;
+}
+
+.skill span {
+  display: block;
+  margin-top: 10px;
+  font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+  line-height: 140%;
+}
+
+h2 {
+  font-size: calc(2.7vw + 24px);
+  font-weight: 500;
+  line-height: calc(3.1vw + 28px);
+  margin-bottom: calc(5.5vw + 19px);
+}
+
+h5 {
+  line-height: 140%;
+  font-weight: 700;
+  font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.legendSkills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+  column-gap: calc(10px + (90 - 10) * ((100vw - 375px) / (1280 - 375)));
+  margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
 }
 
 
 
 
-@media(max-width:600px){
-.infoContainer{
-flex-wrap: wrap;
-gap:30px;
+.diplomContainer {
+  margin-top: calc(12vw + 14px);
+  margin-bottom: calc(12vw + 14px);
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 20px;
 }
 
+.diplom {
+  width: 100%;
+}
 
-.courseContainer{
+.diplomImg{
+  grid-row: 1/3;
+}
+
+.title2 {
+  font-size: calc(2.7vw + 24px);
+  font-weight: 500;
+  line-height: calc(3.1vw + 28px);
+  text-transform: uppercase;
+}
+
+.salaryImg{
+  width: 100%;
+}
+
+.salaryContainer{
+  display: flex;
   flex-direction: column;
-  gap:45px;
+  gap:calc(2.2vw + 11px)
 }
 
-.infoSection{
-  margin-bottom: 40px;
+.laptopSection{
+  margin-top: calc(11vw + 19px);
+  margin-bottom: calc(11vw + 19px);
+}
+
+.laptopImg img{
+  width: 100%;
+}
+
+.laptopBox{
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+}
+
+.laptopImg {
+flex-basis: 570px;
+flex-grow: 1;
+}
+
+.laptopCard{
+  flex-basis: 470px;
+  flex-grow: 2;
 }
 
 
+
+@media(max-width:1060px){
+   .time{
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+
+
+
+@media(max-width:900px){
+  .diplomContainer{
+    grid-template-columns: 1fr;
+  }
+.diplomTitle{
+  order: 1;
+}
+  .diplomImg{
+    grid-row: unset;
+    order: 2;
+  }
+
+  .aboutDiplom{
+    order: 3;
+  }
+ 
+}
+
+
+
+
+
+@media(max-width:600px) {
+  .infoContainer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+
+  .courseContainer {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .infoSection {
+    margin-bottom: 40px;
+  }
+
+
+  .time {
+    justify-content: center;
+  }
 }
