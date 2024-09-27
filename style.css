@@ -152,7 +152,7 @@ section.saleContainer {
 }
 
 .date {
-  font-size: calc(12.6vw + 8px);
+  font-size: calc(12.6vw + 6px);
   font-family: 'Chava';
 }
 
@@ -361,12 +361,58 @@ h5 {
 }
 
 
+.feedbacks {
+  display: flex;
+  gap: 30px;
+}
 
+.feedbackCard {
+  background-color: #F0F7FD;
+  padding: calc(0.5vw + 12px) 20px calc(0.4vw + 30px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+}
 
+.feedbackText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
+.feedbackText img {
+  width: 38px
+}
 
+.feedbackText span {
+  font-size: 21px;
+  line-height: 29px;
+}
 
+.users {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
+.users img{
+  width: 75px;
+ height: 80px;
+ border-radius:50%;
+}
+
+.userInfo{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  padding: 0;
+}
+
+.feedbackContainer{
+  margin-bottom: calc(8vw + 57px);
+}
 
 @media(max-width:900px) {
   .diplomContainer {
@@ -387,7 +433,11 @@ h5 {
   }
 
   .time {
-   gap: 12px 40px; 
+    gap: 12px 40px;
+  }
+
+  .feedbacks {
+   flex-wrap: wrap;
   }
 
 }
@@ -414,7 +464,7 @@ h5 {
     padding-bottom: 0;
   }
 
-  #corner{
+  #corner {
     width: 50px;
   }
 
@@ -437,7 +487,7 @@ h5 {
   }
 
   .time {
-    gap: 8px 20px; 
-   }
+    gap: 8px 20px;
+  }
 
 }
