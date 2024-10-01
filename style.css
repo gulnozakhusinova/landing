@@ -541,17 +541,6 @@ h5 {
   margin-top: 0;
 }
 
-.imgBox img {
-  width: 507px;
-  height: 506px;
-}
-
-.imgBox {
-  /* display: grid;
-  grid-template-columns: repeat(5,1fr); */
-  /* overflow: auto; */
-}
-
 
 .lastContainer {
   margin-top: calc(11vw + 19px);
@@ -674,6 +663,10 @@ left:-60px;
 }
 
 
+.swiper img{
+width: 100%;
+}
+
 
 @media(max-width:920px) {
   .diplomContainer {
@@ -704,6 +697,12 @@ left:-60px;
   .lastBox{
     grid-template-columns: 1fr;
   justify-items: center;
+  }
+
+  .iteamText {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
   }
 
 }
