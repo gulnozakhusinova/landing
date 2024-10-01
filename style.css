@@ -499,66 +499,183 @@ h5 {
   margin: calc(11vw + 19px) 0;
 }
 
-.aboutUsBox{
+.aboutUsBox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:97px;
+  gap: 97px;
 }
 
-.aboutUsCard{
+.aboutUsCard {
   display: grid;
-gap:40px;
+  gap: 40px;
 }
 
-#prize{
+#prize {
   width: 110px;
 }
 
-.aboutText{
+.aboutText {
   font-weight: 600;
   font-size: 27px;
   line-height: 37px;
 }
 
-.iteamText{
+.iteamText {
   font-weight: 700;
   font-size: 58px;
   line-height: 68px;
 }
 
-.believeSection{
-  margin-bottom:calc(11vw + 19px);
+.believeSection {
+  margin-bottom: calc(3vw + 19px);
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 15px;
 }
 
-.believeSection h2{
+.believeSection h2 {
   margin-bottom: 0;
 }
 
-.believeSection p{
+.believeSection p {
   margin-top: 0;
 }
 
-.imgBox img{
+.imgBox img {
   width: 507px;
   height: 506px;
 }
 
-.imgBox{
+.imgBox {
+  /* display: grid;
+  grid-template-columns: repeat(5,1fr); */
+  /* overflow: auto; */
+}
+
+
+.lastContainer {
+  margin-top: calc(11vw + 19px);
+  background-color: #222222;
+  padding: calc(5.9vw + 4px);
+}
+
+.lastBox {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  overflow: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 140px;
+  align-items: center;
+}
+
+.lastCard {
+  color: white;
+}
+
+.itemCard img {
+  width: 28px;
+  height: 28px;
+}
+
+.lastItem {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.itemCard {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lastCard h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.saleIcon{
+  background: #6E3ABA;
+width: 159px;
+height: 159px;
+border-radius:50%;
+display: grid;
+align-items: center;
+color: #fff;
+position: absolute;
+z-index: 1;
+top:-60px;
+left:-60px;
+}
+
+.saleIcon h5{
+  text-align: center;
+}
+
+.formCard2 {
+  background-color: #ffff;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 50px calc(6vw + 6px);
+}
+
+.formCard2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+#flag {
+  width: 31px;
+  padding-right: 3px;
+}
+
+#num {
+  border: 0;
+}
+
+.tel {
+  border: 0;
+  border-bottom: 1px solid #a1a1a1;
+  outline: 0;
+  padding: 6px 0;
+}
+
+.formCard2 form input {
+  border: 0;
+  border-bottom: 1px solid #a1a1a1;
+  outline: 0;
+  background: transparent;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 0;
+}
+
+.lastText h5 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.lastText2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #585656;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  padding-bottom: 5px;
 }
 
 
 
-
-
-
-
-@media(max-width:900px) {
+@media(max-width:920px) {
   .diplomContainer {
     grid-template-columns: 1fr;
   }
@@ -582,6 +699,11 @@ gap:40px;
 
   .feedbacks {
     flex-wrap: wrap;
+  }
+
+  .lastBox{
+    grid-template-columns: 1fr;
+  justify-items: center;
   }
 
 }
@@ -631,24 +753,41 @@ gap:40px;
     gap: 8px 20px;
   }
 
-  .aboutUsBox{
+  .aboutUsBox {
     grid-template-columns: 1fr;
-    gap:40px;
+    gap: 40px;
   }
 
-  .aboutText{
+  .aboutText {
     font-weight: 500;
     font-size: 22px;
     line-height: 30px;
   }
 
-  .aboutUsCard{
-  gap:20px;
+  .aboutUsCard {
+    gap: 20px;
   }
 
-  .iteamText{
+  .iteamText {
     font-weight: 700;
     font-size: 34px;
     line-height: 40px;
   }
+
+  .lastBox{
+    gap:89px;
+  }
+
+  .saleIcon{
+  width: 109px;
+  height: 109px;
+  top:-40px;
+ right: -20px;
+ left: unset;
+  }
+
+   button{
+    width: unset;
+  }
+
 }

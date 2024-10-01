@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet">
   <link rel="stylesheet" href="./font/stylesheet.css">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.css">
 </head>
 
 <body>
@@ -369,7 +370,7 @@
           <h5 class="iteamText">10 направлений </h5>
           <span>обучения в сфере Digital</span>
         </div>
-       
+
       </div>
 
     </div>
@@ -378,21 +379,138 @@
 
   </section>
 
-<section class="believeSection">
-  <h2>Все еще сомневаешься? </h2>
-  <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
-<div class="imgBox">
-  <img src="./img/img1.png">
-  <img src="./img/img2.png">
-  <img src="./img/img3.png">
-  <img src="./img/img4.png">
-  <img src="./img/img5.png">
-</div>
+  <section class="believeSection">
+    <h2>Все еще сомневаешься? </h2>
+    <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
+
+  </section>
+  <section>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./img/img1.png"></div>
+        <div class="swiper-slide"><img src="./img/img2.png"></div>
+        <div class="swiper-slide"><img src="./img/img3.png"></div>
+        <div class="swiper-slide"><img src="./img/img4.png"></div>
+        <div class="swiper-slide"><img src="./img/img5.png"></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
 
 
-</section>
+
+  <section class="lastContainer">
+    <div class="lastBox">
+
+      <div class="lastCard">
+        <h2>запишись на курс прямо сейчас!</h2>
+        <div class="lastItem">
+          <div class="itemCard">
+            <img src="./img/keyboard.svg">
+            <span>html, css, js</span>
+          </div>
+
+          <div class="itemCard">
+            <img src="./img/game.svg">
+            <span>Разработка онлайн игр</span>
+          </div>
+
+          <div class="itemCard">
+            <img src="./img/database.svg">
+            <span>Введение в Bootstrap и Github</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lastCard2">
+
+        <div class="formCard2">
+          <div class="saleIcon">
+            <h5>10%</h5>
+          </div>
+
+          <div class="lastText">
+            <h5>оставь заявку</h5>
+            <span>начало обучения: 1 декабря</span>
+          </div>
+
+          <form action="">
+            <input type="text" placeholder="имя ">
+            <input type="text" placeholder="Фамилия ">
+            <div class="tel">
+              <img src="./img/flag.svg" id="flag">
+              <input type="tel" placeholder="Номер " id="num">
+            </div>
+            <button class="purpel">Записаться на курс</button>
+          </form>
+
+          <div class="lastText2">
+            <span class="text">Остались вопросы? </span>
+            <span>Звони: +998 33 135 33 55</span>
+            <span> Наши консультанты доступны каждый день </span>
+            <span> с 10:00 до 22:00.</span>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
 
   <script src="./main.js"></script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      //responsive
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 80
+        }
+
+      },
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+
+
+
+    });
+  </script>
 </body>
 
 </html>
